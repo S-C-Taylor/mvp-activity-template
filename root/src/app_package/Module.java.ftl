@@ -1,9 +1,9 @@
-package ${packageName}.dagger.modules;
+package ${packageName}.${folderName}.dagger.modules;
 
-import ${packageName}.${className}Activity;
-import ${packageName}.core.${className}Contract;
-import ${packageName}.core.${className}Presenter;
-import ${packageName}.dagger.scopes.${className}ActivityScope;
+import ${packageName}.${folderName}.${className}Activity;
+import ${packageName}.${folderName}.core.${className}Contract;
+import ${packageName}.${folderName}.core.${className}Presenter;
+import ${packageName}.${folderName}.dagger.scopes.${className}ActivityScope;
 
 import dagger.Module;
 import dagger.Provides;

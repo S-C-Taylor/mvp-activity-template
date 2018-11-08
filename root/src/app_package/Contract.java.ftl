@@ -1,4 +1,4 @@
-package ${packageName}.core;
+package ${packageName}.${folderName}.core;
  
 public interface ${className}Contract{
     

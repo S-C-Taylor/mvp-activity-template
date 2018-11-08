@@ -1,4 +1,4 @@
-package ${packageName}.core;
+package ${packageName}.${folderName}.core;
  
 public class ${className}Presenter extends BasePresenter<${className}Contract.View> implements ${className}Contract.Presenter{
 

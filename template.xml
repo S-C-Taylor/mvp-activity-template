@@ -12,13 +12,19 @@
         default="MvpFunction"
         help="The name of the functionality that requires MVP views"/>
 		
-		
 	<parameter id="layoutName"
         name="Layout Name"
         type="string"
         suggest="${activityToLayout(className)}"
         default="${className}"
         help="The name of the layout to create for the activity" />
+		
+		
+	<parameter id="applicationName"
+		name="Application Component Name"
+		type="string"
+		default="ExampleApplication"
+		help="The name of your main application" />
 		
 	<parameter id="basePresenter"
         name="What is your Base Presenter?"
@@ -31,12 +37,6 @@
         type="string"
         default="BaseView"
         help="Choose the base view to use for this screen" />
-		
-	<parameter id="applicationName"
-		name="Application Component Name"
-		type="string"
-		default="ExampleApplication"
-		help="The name of your main application" />
 		
 	
 

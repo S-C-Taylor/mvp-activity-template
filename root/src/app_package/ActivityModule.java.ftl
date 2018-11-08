@@ -1,7 +1,7 @@
-package ${packageName}.dagger.modules;
+package ${packageName}.${folderName}.dagger.modules;
  
-import ${packageName}.${className}Activity;
-import ${packageName}.dagger.scopes.${className}ActivityScope;
+import ${packageName}.${folderName}.${className}Activity;
+import ${packageName}.${folderName}.dagger.scopes.${className}ActivityScope;
 
 import dagger.Module;
 import dagger.Provides;

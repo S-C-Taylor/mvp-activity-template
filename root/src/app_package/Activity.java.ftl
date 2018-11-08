@@ -1,11 +1,11 @@
-package ${packageName};
+package ${packageName}.${folderName};
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import ${packageName}.core.${className}Contract;
-import ${packageName}.dagger.components.${className}ActivityComponent;
-import ${packageName}.dagger.modules.${className}ActivityModule;
+import ${packageName}.${folderName}.core.${className}Contract;
+import ${packageName}.${folderName}.dagger.components.${className}ActivityComponent;
+import ${packageName}.${folderName}.dagger.modules.${className}ActivityModule;
 
 import javax.inject.Inject;
 
@@ -20,7 +20,7 @@ public class ${className}Activity extends Activity implements ${className}Contra
 		
 		${className}ActivityComponent component = Dagger${className}ActivityComponent.builder()
                 .${camelCaseToUnderscore(className)}ActivityModule(new ${className}ActivityModule(this))
-                .${camelCaseToUnderscore(applicationName)}Component(${applicationName}.get(this).getComponent())
+                .${"${applicationName}"?uncap_first}Component(${applicationName}.get(this).getComponent())
                 .build();
 
         component.inject${className}Activity(this);

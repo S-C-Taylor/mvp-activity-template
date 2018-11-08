@@ -1,4 +1,4 @@
-package ${packageName}.dagger.scopes;
+package ${packageName}.${folderName}.dagger.scopes;
 
 import javax.inject.Scope;
 

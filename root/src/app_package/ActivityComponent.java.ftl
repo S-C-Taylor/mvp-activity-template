@@ -1,9 +1,9 @@
-package ${packageName}.dagger.components;
+package ${packageName}.${folderName}.dagger.components;
 
-import ${packageName}.${className}Activity;
-import ${packageName}.dagger.modules.${className}ActivityModule;
-import ${packageName}.dagger.modules.${className}Module;
-import ${packageName}.dagger.scopes.${className}ActivityScope;
+import ${packageName}.${folderName}.${className}Activity;
+import ${packageName}.${folderName}.dagger.modules.${className}ActivityModule;
+import ${packageName}.${folderName}.dagger.modules.${className}Module;
+import ${packageName}.${folderName}.dagger.scopes.${className}ActivityScope;
 
 import dagger.Component;
 
