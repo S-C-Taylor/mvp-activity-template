@@ -1,0 +1,46 @@
+<template format="4"
+        revision="1"
+        name="MVP Template Activity"
+        description="Creates a new MVP Screen - Contract, Presenter, View and associated dagger modules">
+
+    <category value="Other"/>
+
+    <parameter id="className"
+        name="Functionality Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MvpFunction"
+        help="The name of the functionality that requires MVP views"/>
+		
+		
+	<parameter id="layoutName"
+        name="Layout Name"
+        type="string"
+        suggest="${activityToLayout(className)}"
+        default="${className}"
+        help="The name of the layout to create for the activity" />
+		
+	<parameter id="basePresenter"
+        name="What is your Base Presenter?"
+        type="string"
+        default="BasePresenter"
+        help="Choose the base presenter to use for this screen" />
+		
+	<parameter id="baseView"
+        name="What is your Base View?"
+        type="string"
+        default="BaseView"
+        help="Choose the base view to use for this screen" />
+		
+	<parameter id="applicationName"
+		name="Application Component Name"
+		type="string"
+		default="ExampleApplication"
+		help="The name of your main application" />
+		
+	
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
